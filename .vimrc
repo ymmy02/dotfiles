@@ -12,11 +12,15 @@ set incsearch
 set encoding=utf-8
 set fileencoding=utf-8
 set complete+=k
+set t_Co=256
 
 autocmd FileType fortran :set dict=~/.vim/dict/f90.dict
 autocmd FileType python  :set dict=~/.vim/dict/python.dict
 autocmd FileType c   :set dict=~/.vim/dict/c.dict
 autocmd FileType cpp :set dict=~/.vim/dict/c++.dict
+autocmd FileType c, cpp :inoremap { {<ENTER><ENTER>}<UP>
+autocmd FileType c, cpp :set tabstop=4
+autocmd FileType c, cpp :set shiftwidth=4
 autocmd FileType javascript,html :set dict=~/.vim/dict/javascript.dict
 autocmd FileType html :set dict=~/.vim/dict/html.dict
 autocmd FileType css :set dict=~/.vim/dict/html.dict
@@ -33,4 +37,3 @@ inoremap ( ()<LEFT>
 inoremap [ []<LEFT>
 inoremap " ""<LEFT>
 inoremap ' ''<LEFT>
-inoremap { {<ENTER><ENTER>}<UP>
