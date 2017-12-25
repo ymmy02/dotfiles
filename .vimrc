@@ -28,18 +28,14 @@ autocmd FileType php,ctp :set dict=~/.vim/dict/php.dict
 au BufRead,BufNewFile *.txt :setfiletype text
 autocmd FileType text :set spell
 
-autocmd FileType html :packadd emmet-vim
-autocmd FileType python :packadd jedi-vim
-
 map j gj
 map k gk
 
 inoremap ( ()<LEFT>
 inoremap [ []<LEFT>
 inoremap " ""<LEFT>
-inoremap ' ''<LEFT>
 
-"##### Setup dein.vim #####
+"##### Setup dein.vim #####"
 if &compatible
   set nocompatible
 endif

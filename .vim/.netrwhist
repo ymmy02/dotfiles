@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/ymmy/learning/ai/genetic_algorithm/vrptw/results/C1'
+let g:netrw_dirhist_2='/Users/ymmy/learning/ai/genetic_algorithm/vrptw/results/C1/C101'
+let g:netrw_dirhist_3='/Users/ymmy/learning/ai/genetic_algorithm/vrptw_go/scripts'
+let g:netrw_dirhist_4='/Users/ymmy/learning/ai/genetic_algorithm/vrptw_go/results/ex1-cx/bcrc'
+let g:netrw_dirhist_5='/Users/ymmy/learning/ai/genetic_algorithm/vrptw_go/ga'
+let g:netrw_dirhist_6='/Users/ymmy/learning/ai/genetic_algorithm/vrptw_go/analyzer'
