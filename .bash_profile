@@ -9,6 +9,9 @@ fi
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
+# GOPATH
+export GOPATH=$HOME/.go
+
 if [ x${WINDOW} = x ]; then
   PS1="\[\033[35m\]§kohei§\[\033[0m\]:\u \W$ "
 else
