@@ -34,6 +34,9 @@ map k gk
 inoremap ( ()<LEFT>
 inoremap [ []<LEFT>
 inoremap " ""<LEFT>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
+inoremap <C-e> <End>
 
 "##### Setup dein.vim #####"
 if &compatible
