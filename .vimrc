@@ -9,6 +9,8 @@ set infercase
 set nrformats=
 set expandtab
 set incsearch
+set showmatch
+set title
 set encoding=utf-8
 set fileencoding=utf-8
 set complete+=k
@@ -17,17 +19,18 @@ set t_Co=256
 autocmd FileType fortran :set dict=~/.vim/dict/f90.dict
 autocmd FileType python  :set dict=~/.vim/dict/python.dict
 autocmd FileType c   :set dict=~/.vim/dict/c.dict
+autocmd FileType c inoremap { {<ENTER><ENTER>}<UP>
 autocmd FileType cpp :set dict=~/.vim/dict/c++.dict
-autocmd FileType c, cpp inoremap { {<ENTER><ENTER>}<UP>
-autocmd FileType c, cpp :set tabstop=4
-autocmd FileType c, cpp :set shiftwidth=4
+autocmd FileType cpp inoremap { {<ENTER><ENTER>}<UP>
 autocmd FileType javascript,html :set dict=~/.vim/dict/javascript.dict
 autocmd FileType html :set dict=~/.vim/dict/html.dict
 autocmd FileType css :set dict=~/.vim/dict/html.dict
 autocmd FileType php,ctp :set dict=~/.vim/dict/php.dict
 au BufRead,BufNewFile *.txt :setfiletype text
+au BufRead,BufNewFile *.e03 :setfiletype fortran
 autocmd FileType text :set spell
 
+nn <C-l> :call cursor(0,strlen(getline("."))/2)<CR>
 map j gj
 map k gk
 
